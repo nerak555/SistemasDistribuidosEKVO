@@ -24,11 +24,11 @@ public class ServidorMultihilo {
         System.out.println("Servidor multihilo en el puerto " + puerto);
         int contador = 0;
         while (true) {
-            Socket cliente = servidor.accept(); // solo acepta
+            Socket cliente = servidor.accept(); // solo acepta clientes 
             contador++;
             System.out.println("Conexion #" + contador + " desde "
                     + cliente.getInetAddress().getHostAddress());
-            pool.execute(new Manejador(cliente, contador)); // y delega
+            pool.execute(new Manejador(cliente, contador)); // la logica lo delega al Manajeador
         }
     }
 }
