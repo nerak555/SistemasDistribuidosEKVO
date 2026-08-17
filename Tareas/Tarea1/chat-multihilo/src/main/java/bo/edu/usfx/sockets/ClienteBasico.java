@@ -17,8 +17,8 @@ import java.net.Socket;
 public class ClienteBasico {
     
        public static void main(String[] args) throws IOException {
-
-        String host = args.length > 0 ? args[0] : "26.125.87.253";
+           //26.125.87.253
+        String host = args.length > 0 ? args[0] : "localhost";
 
         Socket socket = new Socket(host, 5000);
 
