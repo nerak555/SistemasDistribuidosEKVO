@@ -10,7 +10,7 @@ public class ClientInteractivo {
     public static void main(String[] args) {
         // IP de Tailscale de la máquina que está corriendo el servidor
         //100.70.39.66
-        String host = "localhost"; 
+        String host = "26.25.70.137"; 
         int port = 5002;
 
         try (Socket socket = new Socket(host, port);

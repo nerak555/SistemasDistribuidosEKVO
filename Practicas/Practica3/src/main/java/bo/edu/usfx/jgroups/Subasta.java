@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class Subasta implements Serializable {
     private static final long serialVersionUID = 1L;
-
+//UID observacion
     private final String articulo;
     private final double precioBase;
     private final String creador;

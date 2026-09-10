@@ -15,7 +15,7 @@ public class ClienteChat {
     public static void main(String[] args) throws IOException {
         // Apuntamos directo a la compu de Karen por Radmin VPN 26.209.177.12
         
-        String host = args.length > 0 ? args[0] : "localhost";
+        String host = args.length > 0 ? args[0] : "100.70.39.66";
         Socket socket = new Socket(host, 5000); 
         
         System.out.println("Conectado. Puerto local: " + socket.getLocalPort());

@@ -26,7 +26,7 @@ public class RemateUSFX implements Receiver {
 
     private JChannel canal;
     private final String nombre;
-
+//map OBSERVACION
     private final Map<String, Subasta> subastas = new HashMap<>();
 
     private final ScheduledExecutorService reloj
